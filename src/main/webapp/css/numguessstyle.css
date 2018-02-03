@@ -22,7 +22,7 @@ h1 {
     padding-left: .4em;
     margin: 0;
     height: 170px;
-    background-size: 150% 120%;
+
 
 
 }
@@ -83,8 +83,7 @@ h1 {
     top: 210px;
     left: 140px;
     width: 200px;
-    background-color: navajowhite;
-    color: blue;
+    color: yellow;
     padding-left: .8em;
 
 }
