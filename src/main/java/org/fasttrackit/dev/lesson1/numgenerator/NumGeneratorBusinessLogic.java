@@ -1,5 +1,13 @@
 package org.fasttrackit.dev.lesson1.numgenerator;
 
+import javax.mail.Message;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.Properties;
+
 /**
  * Created by condor on 29/11/14.
  * FastTrackIT, 2015
@@ -79,6 +87,9 @@ public class NumGeneratorBusinessLogic {
             timer = (timpOprire - timpPornire)/1000.0;
             hint="";
             successfulGuess = true;
+
+           SendEmail sm = new SendEmail("danialex9696@gmail.com");
+           sm.sendEmailUsingGmail();
         } else if (guessNumber < generatedNumber) {
             hint = "higher";
             successfulGuess = false;
@@ -89,5 +100,6 @@ public class NumGeneratorBusinessLogic {
 
         return successfulGuess;
     }
+
 
 }
